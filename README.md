@@ -1,17 +1,22 @@
-# Admin Dashboard-CRUD
-A Java servlet-based admin portal for managing tutors, users, bookings, and feedback. Features role-based access control (Admin/Editor), user authentication, and CRUD operations for administrator management.
-## Key Features Highlighted:
-📊 Dashboard analytics (tutors/users/bookings)
+# Admin Dashboard - CRUD System
 
-👨‍💻 Admin/Editor role management
+Java servlet-based admin portal for managing tutors, users, bookings, and feedback. Features role-based access control (Admin/Editor), user authentication, and CRUD operations.
 
-🔐 Secure login system
+## Key Features
+- ✅ Dashboard analytics (tutors/users/bookings)
+- ✅ Admin/Editor role management
+- ✅ Secure login system
+- ✅ Admin creation interface
+- ✅ User/tutor management tables
 
-➕ Admin creation interface
+## Screenshots
+| Login Page | Dashboard |
+|------------|-----------|
+| ![Admin Login](images/admin (1).png) | ![Dashboard](images/admin_dashboard.png) |
 
-📝 User/tutor management tables
-
-This description captures the core functionality shown in your screenshots while being suitable for GitHub's technical audience. It emphasizes the Java backend, admin control features, and educational context implied by "tutor management".
-
+## Getting Started
+1. Clone the repository: `git clone https://github.com/your-username/admin-dashboard.git`
+2. Configure database in `Datastorage.java`
+3. Deploy to Tomcat server
 ![Admin Login](images/admin (1).png)
 ![Dashboard](images/screenshot-dashboard.png)
