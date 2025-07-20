@@ -12,3 +12,6 @@ A Java servlet-based admin portal for managing tutors, users, bookings, and feed
 📝 User/tutor management tables
 
 This description captures the core functionality shown in your screenshots while being suitable for GitHub's technical audience. It emphasizes the Java backend, admin control features, and educational context implied by "tutor management".
+
+![Admin Login](images/admin (1).png)
+![Dashboard](images/screenshot-dashboard.png)
