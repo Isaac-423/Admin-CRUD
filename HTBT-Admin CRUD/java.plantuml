@@ -1,0 +1,82 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AddRecordServlet {
+  + AddRecordServlet(): 
+  + init(): void
+  # doGet(HttpServletRequest, HttpServletResponse): void
+  # doPost(HttpServletRequest, HttpServletResponse): void
+}
+class Admin {
+  + Admin(int, String, String, String, String): 
+  - name: String
+  - id: int
+  - password: String
+  - email: String
+  - role: String
+   name: String
+   password: String
+   id: int
+   email: String
+   role: String
+}
+class DataStorage {
+  + DataStorage(String): 
+  + addRecord(Admin): void
+  - saveAllRecords(List<Admin>): void
+  + updateRecordRole(int, String): void
+  + deleteRecord(int): void
+  + generateNewId(): int
+  - initializeFile(): void
+   allRecords: List<Admin>
+}
+class DeleteRecordServlet {
+  + DeleteRecordServlet(): 
+  # doPost(HttpServletRequest, HttpServletResponse): void
+  + init(): void
+}
+class EditRecordServlet {
+  + EditRecordServlet(): 
+  # doPost(HttpServletRequest, HttpServletResponse): void
+  + init(): void
+  # doGet(HttpServletRequest, HttpServletResponse): void
+}
+class Editor {
+  + Editor(int, String, String, String): 
+   role: String
+}
+class ListRecordServlet {
+  + ListRecordServlet(): 
+  + init(): void
+  # doGet(HttpServletRequest, HttpServletResponse): void
+}
+class LoginServlet {
+  + LoginServlet(): 
+  + init(): void
+  # doGet(HttpServletRequest, HttpServletResponse): void
+  # doPost(HttpServletRequest, HttpServletResponse): void
+}
+class LogoutServlet {
+  + LogoutServlet(): 
+  # doGet(HttpServletRequest, HttpServletResponse): void
+}
+
+AddRecordServlet     -[#595959,dashed]->  Admin               : "«create»"
+AddRecordServlet    "1" *-[#595959,plain]-> "dataStorage\n1" DataStorage         
+AddRecordServlet     -[#595959,dashed]->  DataStorage         : "«create»"
+AddRecordServlet     -[#595959,dashed]->  Editor              : "«create»"
+DataStorage          -[#595959,dashed]->  Admin               : "«create»"
+DataStorage          -[#595959,dashed]->  Editor              : "«create»"
+DeleteRecordServlet "1" *-[#595959,plain]-> "dataStorage\n1" DataStorage         
+DeleteRecordServlet  -[#595959,dashed]->  DataStorage         : "«create»"
+EditRecordServlet    -[#595959,dashed]->  DataStorage         : "«create»"
+EditRecordServlet   "1" *-[#595959,plain]-> "dataStorage\n1" DataStorage         
+Editor               -[#000082,plain]-^  Admin               
+ListRecordServlet    -[#595959,dashed]->  DataStorage         : "«create»"
+ListRecordServlet   "1" *-[#595959,plain]-> "dataStorage\n1" DataStorage         
+LoginServlet         -[#595959,dashed]->  DataStorage         : "«create»"
+LoginServlet        "1" *-[#595959,plain]-> "dataStorage\n1" DataStorage         
+@enduml
