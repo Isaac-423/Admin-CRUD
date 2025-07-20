@@ -13,7 +13,7 @@ A Java servlet-based admin portal for managing tutors, users, bookings, and feed
 
 This description captures the core functionality shown in your screenshots while being suitable for GitHub's technical audience. It emphasizes the Java backend, admin control features, and educational context implied by "tutor management".
 
-https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(1).png
-https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(2).png
-https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(3).png
-https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(4).png
+![Admin Login](https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(1).png)
+![Admin Dashboard](https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(2).png)
+![Add New-Admin](https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(3).png)
+![Coding Environment](https://github.com/Isaac-423/Admin-CRUD/blob/c2d3795f35f3dc4f8312a388d40f56837f81256c/admin%20(4).png)
