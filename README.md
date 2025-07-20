@@ -1,6 +1,6 @@
-## Admin Dashboard-CRUD
+# Admin Dashboard-CRUD
 A Java servlet-based admin portal for managing tutors, users, bookings, and feedback. Features role-based access control (Admin/Editor), user authentication, and CRUD operations for administrator management.
-# Key Features Highlighted:
+## Key Features Highlighted:
 📊 Dashboard analytics (tutors/users/bookings)
 
 👨‍💻 Admin/Editor role management
